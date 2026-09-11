@@ -102,8 +102,30 @@ export default function Intake() {
     <aside className="intake" id="intake">
       <div className="intake-top">
         <span>YOUR NEXT CHAPTER STARTS HERE</span>
-        <span>{reference ? 'COMPLETE' : `0${step} / 02`}</span>
+        <span className="chapter-badge">
+          {reference ? 'COMPLETE' : `CHAPTER 0${step} OF 02`}
+        </span>
       </div>
+
+      {!reference && (
+        <div className="chapter-steps-bar" aria-label="Form chapters">
+          <div className={`chapter-step-pill ${step === 1 ? 'active' : 'completed'}`}>
+            <span className="step-num">01</span>
+            <div className="step-text">
+              <span className="step-title">Business Profile</span>
+              <span className="step-sub">Pathway &amp; Goals</span>
+            </div>
+          </div>
+          <div className={`chapter-step-pill ${step === 2 ? 'active' : 'inactive'}`}>
+            <span className="step-num">02</span>
+            <div className="step-text">
+              <span className="step-title">Contact Details</span>
+              <span className="step-sub">Direct Information</span>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className={`step-line ${step === 2 ? 'step-two' : ''}`}>
         <i />
         <i />
@@ -131,7 +153,7 @@ export default function Intake() {
       ) : (
         <>
           <p className="eyebrow">
-            {step === 1 ? 'LET’S GET ACQUAINTED' : 'LET’S STAY IN TOUCH'}
+            {step === 1 ? 'CHAPTER 1 · LET’S GET ACQUAINTED' : 'CHAPTER 2 · LET’S STAY IN TOUCH'}
           </p>
           <h2 ref={heading} tabIndex={-1}>
             {step === 1 ? (
@@ -153,6 +175,7 @@ export default function Intake() {
               ? 'Start with your business. We’ll help bring the capital options into focus.'
               : 'Tell us how to reach you about your business goals.'}
           </p>
+
 
           <form onSubmit={submit}>
             <div className="fields">
@@ -324,9 +347,10 @@ export default function Intake() {
               {pending
                 ? 'Saving your request…'
                 : step === 1
-                ? 'Continue to your details'
+                ? 'Continue to Chapter 2: Contact Details'
                 : 'Request a consultation'}
               <ArrowRight />
+
             </Button>
 
             {step === 2 && (
