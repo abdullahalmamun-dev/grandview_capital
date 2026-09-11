@@ -244,15 +244,18 @@ export default function Intake() {
                   }
                 />
                 <label htmlFor="smsConsent">
-                  I agree to receive recurring marketing and informational
-                  texts from Grandview Capital, including messages sent using
-                  automated technology. Typically 2–4 promotional messages per
-                  month; frequency may vary with your interaction. Message and
-                  data rates may apply. Consent is optional and not a
-                  condition of purchase. Reply STOP to opt out or HELP for
-                  help. See our{' '}
+                  By checking this box, I agree to receive recurring marketing,
+                  promotional, and informational text messages from{' '}
+                  <strong>Grandview Capital</strong> (including consultation
+                  updates and financing notifications) at the mobile number
+                  provided above. Messages may be sent using automated
+                  technology. Consent is optional and not a condition of any
+                  purchase or service. Message frequency varies (typically 2–4
+                  msgs/month). <strong>Message and data rates may apply.</strong>{' '}
+                  Reply <strong>STOP</strong> to cancel or opt out. Reply{' '}
+                  <strong>HELP</strong> for help. View our{' '}
                   <a href="/terms#sms" target="_blank" rel="noreferrer">
-                    SMS Terms
+                    Terms &amp; Conditions
                   </a>{' '}
                   and{' '}
                   <a href="/privacy" target="_blank" rel="noreferrer">

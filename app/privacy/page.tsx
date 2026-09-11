@@ -1,4 +1,67 @@
 import { Header, Footer } from '@/components/site-chrome';
-export const metadata = {title: 'Privacy Policy | Grandview Capital', description: 'How Grandview Capital handles inquiry information and optional SMS consent.'};
-const content = "<p class=\"eyebrow\">LEGAL</p><h1>Privacy Policy</h1><p class=\"updated\">Effective date: September 11, 2026</p><p>Grandview Capital (“Grandview,” “we,” “our,” or “us”) respects your privacy. This Privacy Policy explains how we collect, use, disclose, and protect information when you visit our website, request a consultation, or communicate with us, including through our text messaging program.</p><h2>Information we collect</h2><p>We may collect information you provide directly, including your name, business name, email address, mobile telephone number, financing goals, business details, and the content of communications with us. We may also collect device, browser, IP address, referral, and website usage information through cookies and similar technologies.</p><h2>How we use information</h2><p>We use information to respond to inquiries; provide financial consulting services; evaluate potential capital programs; connect you with appropriate service providers when you request or authorize it; operate and improve our website; maintain security; comply with law; and send communications, including text messages when you have separately opted in.</p><h2>How we disclose information</h2><p>We may disclose information to service providers that perform functions for us, professional advisers, regulators or law enforcement where legally required, and potential capital providers or other business partners when necessary to fulfill your request or with your direction. We may also disclose information in connection with a business transaction. We do not sell mobile opt-in data.</p><blockquote style=\"border-left:4px solid var(--peach);background:rgba(219, 229, 218, 0.4);padding:20px 25px;margin:20px 0;border-radius:0 8px 8px 0;color:var(--dark)\"><strong style=\"display:block;margin-bottom:8px;color:var(--peach)\">Non-sharing Clause:</strong><span style=\"line-height:1.7;font-size:14.5px\">No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. Information sharing to subcontractors in support services, such as customer service, is permitted. All other use case categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</span></blockquote><h2>Text messaging data</h2><p>If you opt in to the Grandview Capital Updates SMS Program, we use your mobile number and consent record only to operate that program and communicate with you as described in our Terms &amp; Conditions. Mobile opt-in information and consent are not shared with third parties or affiliates for marketing or promotional purposes.</p><h2>Cookies and analytics</h2><p>This website does not add advertising or analytics cookies. The hosting service may use necessary cookies for access and security. You can control cookies through your browser settings, though disabling necessary cookies may affect site functionality.</p><h2>Data retention and security</h2><p>We retain information for as long as reasonably necessary for the purposes described above and to meet legal obligations. We use reasonable administrative, technical, and physical safeguards, but no transmission or storage system can be guaranteed completely secure.</p><h2>Your choices</h2><p>You may request access, correction, or deletion of your personal information, subject to applicable exceptions, by contacting us. You may unsubscribe from email using the link provided in an email. To stop text messages, reply STOP to any message. For text help, reply HELP.</p><h2>Children’s privacy</h2><p>Our services are intended for business owners and adults and are not directed to children under 18. We do not knowingly collect personal information from children.</p><h2>Changes to this policy</h2><p>We may update this policy from time to time. The effective date above indicates the latest revision. Material changes will be posted on this page.</p><h2>Contact us</h2><p>Questions or privacy requests may be sent to Grandview Capital through <a href=\"/#intake\">our inquiry form</a>.</p>";
-export default function LegalPage(){return <div id="top"><Header/><main className="legal" dangerouslySetInnerHTML={{__html:content}}/><Footer/></div>}
+
+export const metadata = {
+  title: 'Privacy Policy | Grandview Capital',
+  description: 'How Grandview Capital handles inquiry information and mobile SMS opt-in consent.',
+};
+
+const content = `
+<p class="eyebrow">LEGAL</p>
+<h1>Privacy Policy</h1>
+<p class="updated">Effective date: September 11, 2026</p>
+
+<p>Grandview Capital (“Grandview,” “we,” “our,” or “us”) respects your privacy. This Privacy Policy explains how we collect, use, disclose, and protect information when you visit our website, request a consultation, or communicate with us, including through our mobile text messaging program (Grandview Capital Updates).</p>
+
+<h2>Information We Collect</h2>
+<p>We may collect information you provide directly to us, including your name, company name, business email address, mobile telephone number, financing goals, business profile details, and the content of your communications with us. We may also collect device, browser, IP address, referral, and website usage information through essential cookies and security log data.</p>
+
+<h2>How We Use Information</h2>
+<p>We use your information to respond to consultation requests; provide independent capital consulting services; evaluate suitable financing pathways; communicate with you regarding your inquiries; operate, maintain, and secure our website; comply with legal obligations; and send recurring marketing, promotional, and transactional text messages when you have expressly opted in.</p>
+
+<h2>Mobile Opt-In & Text Messaging Data Non-Sharing Policy</h2>
+<p>Grandview Capital is committed to protecting your mobile privacy. If you opt in to receive text messages from Grandview Capital, we handle your mobile information under strict 10DLC and CTIA regulatory guidelines:</p>
+
+<blockquote style="border-left:4px solid #c9ad75;background:rgba(201, 173, 117, 0.12);padding:22px 28px;margin:24px 0;border-radius:2px;color:#142735">
+  <strong style="display:block;margin-bottom:10px;color:#907440;font-size:15px">10DLC &amp; CTIA Non-Sharing Disclosure:</strong>
+  <span style="line-height:1.75;font-size:14px;display:block">
+    No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
+  </span>
+</blockquote>
+
+<p>Mobile opt-in data, phone numbers, and SMS consent records will not be sold, rented, leased, traded, or shared with third parties, affiliates, or lead generators for marketing or promotional purposes. Information sharing to subcontractors in support services (such as SMS gateway providers) is strictly limited to facilitating message delivery on our behalf.</p>
+
+<h2>How We Disclose General Information</h2>
+<p>We may disclose non-mobile business information to trusted service providers performing technical services on our behalf, professional advisers, or regulatory bodies when required by law. With your explicit direction and authorization, we may introduce your financing request to prospective independent capital providers. We do not sell any personal or business data.</p>
+
+<h2>Cookies and Tracking</h2>
+<p>This website uses essential session tokens for navigation and security. We do not utilize third-party advertising cookies or cross-site tracking scripts.</p>
+
+<h2>Data Retention and Security</h2>
+<p>We retain your information for as long as necessary to fulfill the consultation request, maintain legitimate business records, and comply with regulatory requirements. We maintain administrative, technical, and physical safeguards designed to protect personal information against unauthorized access, loss, or misuse.</p>
+
+<h2>Your Choices &amp; Opt-Out Instructions</h2>
+<p>You have the right to request access to, correction of, or deletion of your personal data by contacting us. For mobile text messages:</p>
+<ul>
+  <li><strong>To Stop Messages:</strong> Reply <strong>STOP</strong> to any text message to cancel your enrollment immediately.</li>
+  <li><strong>For Help:</strong> Reply <strong>HELP</strong> to any text message or contact us directly.</li>
+</ul>
+
+<h2>Children’s Privacy</h2>
+<p>Our website and consulting services are intended strictly for adult business owners and commercial enterprises. We do not knowingly collect personal data from individuals under 18 years of age.</p>
+
+<h2>Changes to This Policy</h2>
+<p>We may update this Privacy Policy periodically. The effective date at the top of this document indicates when changes were last implemented. Continued use of our site following an update constitutes acceptance of the revised terms.</p>
+
+<h2>Contact Us</h2>
+<p>If you have questions regarding this Privacy Policy or our mobile data protection practices, please contact Grandview Capital through <a href="/#intake">our consultation inquiry form</a>.</p>
+`;
+
+export default function LegalPage() {
+  return (
+    <div id="top">
+      <Header />
+      <main className="legal" dangerouslySetInnerHTML={{ __html: content }} />
+      <Footer />
+    </div>
+  );
+}

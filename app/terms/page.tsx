@@ -1,4 +1,84 @@
 import { Header, Footer } from '@/components/site-chrome';
-export const metadata = {title: 'Terms & Conditions | Grandview Capital', description: 'Website, consulting, and optional SMS program terms for Grandview Capital.'};
-const content = "<p class=\"eyebrow\">LEGAL</p><h1>Terms &amp; Conditions</h1><p class=\"updated\">Effective date: September 11, 2026</p><p>These Terms &amp; Conditions govern your use of the Grandview Capital website and services. By using the website, you agree to these terms and our Privacy Policy.</p><h2>Our role</h2><p>Grandview Capital provides financial consulting and may help businesses identify and pursue capital programs offered by independent third parties. Grandview is not a lender, does not make credit decisions, and does not guarantee approval, funding, rates, or terms. All capital decisions and final agreements are made by the applicable provider and client.</p><h2>Website use</h2><p>You must be at least 18 years old and may use this website only for lawful purposes. Information on this site is general in nature and is not legal, tax, accounting, or investment advice. You should consult qualified professionals before making financial decisions.</p><h2>Requests and third-party providers</h2><p>When you ask us to explore capital options, you authorize us to use the information you provide to evaluate your request. With your authorization, we may introduce you to independent providers. You are responsible for reviewing any provider and agreement before proceeding. We are not responsible for the acts, omissions, products, or services of independent third parties.</p><h2 id=\"sms\">Grandview Capital Updates SMS Program</h2><p>Program name: <b>Grandview Capital Updates</b>. Customers opt in by completing a <a href=\"/#intake\"><u>financing inquiry form</u></a> on the Grandview Capital website. By checking the SMS consent box on our website or otherwise expressly opting in, you agree to receive recurring marketing and informational text messages from Grandview Capital at the mobile number you provide. Messages may be sent using automated technology. Consent is not a condition of purchasing any goods or services.</p><h3>The message format may look like as below:</h3><blockquote style=\"border-left:4px solid var(--peach);background:rgba(219, 229, 218, 0.4);padding:30px;margin:25px 0;border-radius:0 12px 12px 0;font-style:italic;color:var(--dark)\"><p style=\"margin-bottom:15px\">Grandview Capital<br/>We provide updates, alerts, and information regarding your inquiries or consultations.</p><p style=\"margin-bottom:15px\">You can cancel the SMS service at any time. Just reply STOP to any message. After you send the SMS message &quot;STOP&quot; to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us. If you want to join again, just sign up as you did the first time and we will start sending SMS messages to you again.</p><p style=\"margin-bottom:15px\">If you are experiencing issues with the messaging program you can reply with the keyword HELP for more assistance, or you can get help directly through <a href=\"/#intake\">our inquiry form</a>.</p><p style=\"margin-bottom:15px\">Carriers are not liable for delayed or undelivered messages</p><p style=\"margin-bottom:15px\">As always, message and data rates may apply for any messages sent to you from us and to us from you. Message frequency varies. If you have any questions about your text plan or data plan, it is best to contact your wireless provider.</p><p style=\"margin-bottom:0\">If you have any questions regarding privacy, please read our privacy policy: <a href=\"/privacy\"><u>Privacy Policy</u></a></p></blockquote><h3>Message frequency</h3><p>You may receive typically 2-4 promotional message per month. Message frequency may vary, depending on your interaction with Grandview Capital.</p><h3>Message &amp; Data Rates</h3><p><b>Message and data rates may apply.</b> Charges for SMS messages are determined by your wireless carrier and your mobile service plan. Grandview Capital is not responsible for any SMS or data charges incurred from your mobile carrier.</p><h3>Opt out</h3><p>Reply <b>STOP</b> to any message to cancel. You may receive one final message confirming your opt-out. After opting out, you will no longer receive messages from the program unless you enroll again.</p><h3>Customer care</h3><p>Reply <b>HELP</b> for help or email customer care through <a href=\"/#intake\">our inquiry form</a>. Carriers are not liable for delayed or undelivered messages.</p><h3>Eligibility and privacy</h3><p>You must be the authorized user of the mobile number used to enroll and have a supported wireless device and carrier. We handle your information under our <a href=\"/privacy\"><u>Privacy Policy</u></a>. Mobile opt-in data and consent will not be shared with third parties.</p><h2>Intellectual property</h2><p>The website and its content are owned by or licensed to Grandview and protected by applicable intellectual property laws. You may view the website for your personal business use but may not copy, modify, distribute, or exploit its content without written permission.</p><h2>Disclaimer and limitation of liability</h2><p>The website and its content are provided “as is” and “as available.” To the fullest extent permitted by law, Grandview disclaims warranties and will not be liable for indirect, incidental, special, consequential, or punitive damages arising from your use of the website or services.</p><h2>Changes</h2><p>We may update these terms by posting a revised version on this page. Continued use after an update means you accept the revised terms.</p><h2>Contact</h2><p>Questions about these terms may be sent to Grandview Capital through <a href=\"/#intake\">our inquiry form</a>.</p>";
-export default function LegalPage(){return <div id="top"><Header/><main className="legal" dangerouslySetInnerHTML={{__html:content}}/><Footer/></div>}
+
+export const metadata = {
+  title: 'Terms & Conditions | Grandview Capital',
+  description: 'Website, consulting, and SMS messaging program terms for Grandview Capital.',
+};
+
+const content = `
+<p class="eyebrow">LEGAL</p>
+<h1>Terms &amp; Conditions</h1>
+<p class="updated">Effective date: September 11, 2026</p>
+
+<p>These Terms &amp; Conditions govern your use of the Grandview Capital website and financial consulting services. By accessing our site or submitting an inquiry, you agree to comply with these terms and our Privacy Policy.</p>
+
+<h2>Our Role &amp; Independent Advisory Scope</h2>
+<p>Grandview Capital provides independent financial consulting services to assist business owners in evaluating suitable capital pathways. Grandview Capital is a financial consultant, not a lender. We do not make credit decisions, issue loans, or guarantee funding approvals, interest rates, or specific terms. All financing programs are provided by independent third parties subject to separate agreements and credit evaluation.</p>
+
+<h2>Website Usage</h2>
+<p>You must be at least 18 years old and authorized to act on behalf of a commercial enterprise to use this site. Content provided on this website is for informational purposes only and does not constitute formal legal, accounting, tax, or investment advice.</p>
+
+<h2 id="sms">Grandview Capital Updates SMS Messaging Program</h2>
+<p>Program Name: <strong>Grandview Capital Updates</strong></p>
+
+<h3>Mobile Opt-In &amp; Call to Action (CTA) Details</h3>
+<p>Customers opt in to receive text messages from Grandview Capital by taking the following specific action on our website:</p>
+<ol>
+  <li>Navigate to the online consultation inquiry form located at <a href="/#intake"><u>/#intake</u></a>.</li>
+  <li>Enter their business information, mobile phone number, and details.</li>
+  <li>Check the explicit SMS opt-in checkbox stating consent to receive text messages.</li>
+  <li>Click the <strong>“Request a consultation”</strong> button to submit the form.</li>
+</ol>
+<p>By checking the opt-in checkbox and submitting your mobile number, you expressly agree to receive recurring marketing, promotional, and informational text messages from <strong>Grandview Capital</strong> (including consultation scheduling, inquiry updates, and capital pathway information) sent via automated dialing technology.</p>
+
+<blockquote style="border-left:4px solid #c9ad75;background:rgba(201, 173, 117, 0.12);padding:22px 28px;margin:24px 0;border-radius:2px;color:#142735">
+  <strong style="display:block;margin-bottom:10px;color:#907440;font-size:15px">SMS Program Disclosure &amp; Key Terms:</strong>
+  <ul style="margin:0;padding-left:18px;line-height:1.75;font-size:13.5px">
+    <li><strong>Program Name:</strong> Grandview Capital Updates</li>
+    <li><strong>Message Frequency:</strong> Message frequency varies (typically 2–4 messages per month).</li>
+    <li><strong>Message &amp; Data Rates:</strong> <strong>Message and data rates may apply.</strong></li>
+    <li><strong>Opt-Out Instructions:</strong> Reply <strong>STOP</strong> to cancel or opt out.</li>
+    <li><strong>Customer Support:</strong> Reply <strong>HELP</strong> for help or customer support.</li>
+    <li><strong>Privacy Policy Link:</strong> View our <a href="/privacy"><u>Privacy Policy</u></a> for full data protection details.</li>
+    <li><strong>Consent Non-Condition:</strong> Consent is not a condition of purchase or receiving services.</li>
+  </ul>
+</blockquote>
+
+<h3>Sample Message Formats</h3>
+<p>Messages received from our program may include:</p>
+<ul>
+  <li><em>Opt-In Confirmation:</em> "Grandview Capital: Thank you for subscribing to Grandview Capital Updates regarding your consultation. Msg frequency varies. Msg &amp; data rates may apply. Reply STOP to cancel, HELP for help."</li>
+  <li><em>Consultation Update:</em> "Grandview Capital: Your consultation inquiry ref #GV-10293 has been received. A consultant will review your business profile shortly. Reply STOP to cancel, HELP for help."</li>
+</ul>
+
+<h3>How to Opt Out (STOP Instructions)</h3>
+<p>You can cancel the SMS service at any time by texting <strong>STOP</strong> to any message received. Upon sending <strong>STOP</strong>, we will send one final SMS message confirming that you have been unsubscribed. After this, you will no longer receive text messages from us. If you wish to join again, simply complete the inquiry form and check the opt-in box as you did initially.</p>
+
+<h3>Customer Care &amp; Support (HELP Instructions)</h3>
+<p>If you experience issues with the messaging program or need assistance, reply <strong>HELP</strong> to any text message, or reach out directly through <a href="/#intake">our online inquiry form</a>. Wireless carriers are not liable for delayed or undelivered messages.</p>
+
+<h3>Mobile Privacy Protection</h3>
+<p>We respect your mobile privacy. Mobile phone numbers, opt-in records, and SMS consent data will not be sold, rented, leased, or shared with third parties or affiliates for marketing or promotional purposes. Review our full <a href="/privacy"><u>Privacy Policy</u></a> for detailed safeguards.</p>
+
+<h2>Intellectual Property</h2>
+<p>All website design, text, graphics, trademarks, and code are the property of Grandview Capital and protected by applicable copyright and trademark laws.</p>
+
+<h2>Limitation of Liability</h2>
+<p>The website and materials are provided on an "as is" and "as available" basis. Grandview Capital disclaims all warranties and shall not be liable for any indirect, incidental, or consequential damages arising from the use of our site or services.</p>
+
+<h2>Changes to Terms</h2>
+<p>We reserve the right to modify these terms at any time. Updated versions will be posted on this page with an updated effective date.</p>
+
+<h2>Contact Us</h2>
+<p>If you have questions regarding these Terms &amp; Conditions or our SMS program, please contact Grandview Capital through <a href="/#intake">our inquiry form</a>.</p>
+`;
+
+export default function LegalPage() {
+  return (
+    <div id="top">
+      <Header />
+      <main className="legal" dangerouslySetInnerHTML={{ __html: content }} />
+      <Footer />
+    </div>
+  );
+}
