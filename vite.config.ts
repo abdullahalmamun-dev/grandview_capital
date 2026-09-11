@@ -55,7 +55,7 @@ export default defineConfig(async () => {
   // Wrangler snapshots its log path while the Cloudflare plugin is imported.
   const { cloudflare } = await import('@cloudflare/vite-plugin');
 
-  const serverPort = process.env.PORT ? parseInt(process.env.PORT, 10) : 3005;
+  const serverPort = process.env.PORT ? parseInt(process.env.PORT, 10) : 4000;
 
   return {
     css: { postcss: { plugins: [tailwindcss()] } },
