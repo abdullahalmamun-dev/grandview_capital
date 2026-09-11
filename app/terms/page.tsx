@@ -10,67 +10,46 @@ const content = `
 <h1>Terms &amp; Conditions</h1>
 <p class="updated">Effective date: September 11, 2026</p>
 
-<p>These Terms &amp; Conditions govern your use of the Grandview Capital website and financial consulting services operated by Lead Service Group LLC (“Lead Service Group,” “Grandview Capital,” “we,” “our,” or “us”). By accessing our site or submitting an inquiry, you agree to comply with these terms and our Privacy Policy.</p>
+<p>These Terms &amp; Conditions govern your use of the Grandview Capital website and financial consulting services operated by Lead Service Group LLC (“Lead Service Group,” “Grandview Capital,” “we,” “our,” or “us”). By accessing our website or submitting an inquiry, you agree to comply with these terms and our <a href="/privacy">Privacy Policy</a>.</p>
 
+<h2>1. Advisory Scope &amp; Role</h2>
+<p>Grandview Capital provides independent financial consulting services to assist commercial enterprises in evaluating suitable capital pathways. Grandview Capital is a financial consultant, not a lender. We do not make credit decisions, issue loans, or guarantee funding approvals, rates, or financing terms. All financing programs are provided by independent third-party institutions subject to separate evaluation and agreement.</p>
 
-<h2>Our Role &amp; Independent Advisory Scope</h2>
-<p>Grandview Capital provides independent financial consulting services to assist business owners in evaluating suitable capital pathways. Grandview Capital is a financial consultant, not a lender. We do not make credit decisions, issue loans, or guarantee funding approvals, interest rates, or specific terms. All financing programs are provided by independent third parties subject to separate agreements and credit evaluation.</p>
+<h2>2. Eligibility &amp; Website Usage</h2>
+<p>You must be at least 18 years old and authorized to act on behalf of a commercial business to use this website. Materials on this site are for informational purposes only and do not constitute formal accounting, legal, or investment advice.</p>
 
-<h2>Website Usage</h2>
-<p>You must be at least 18 years old and authorized to act on behalf of a commercial enterprise to use this site. Content provided on this website is for informational purposes only and does not constitute formal legal, accounting, tax, or investment advice.</p>
+<h2 id="sms">3. Mobile Messaging Program (Grandview Capital Updates)</h2>
+<p>Grandview Capital offers a mobile text messaging service under the program name <strong>Grandview Capital Updates</strong>. We use SMS messaging to communicate regarding your consultation requests, appointment scheduling, inquiry status, and capital pathway updates.</p>
 
-<h2 id="sms">Grandview Capital Updates SMS Messaging Program</h2>
-<p>Program Name: <strong>Grandview Capital Updates</strong></p>
+<h3>Program Enrollment &amp; Mobile Opt-In</h3>
+<p>You may enroll in the mobile messaging program by completing the consultation inquiry form on our website at <a href="/#intake">/#intake</a>, providing your mobile telephone number, checking the explicit SMS consent box, and submitting your request. By completing these steps, you provide express written consent to receive automated marketing, promotional, and transactional text messages from Grandview Capital at the number provided.</p>
 
-<h3>Mobile Opt-In &amp; Call to Action (CTA) Details</h3>
-<p>Customers opt in to receive text messages from Grandview Capital by taking the following specific action on our website:</p>
-<ol>
-  <li>Navigate to the online consultation inquiry form located at <a href="/#intake"><u>/#intake</u></a>.</li>
-  <li>Enter their business information, mobile phone number, and details.</li>
-  <li>Check the explicit SMS opt-in checkbox stating consent to receive text messages.</li>
-  <li>Click the <strong>“Request a consultation”</strong> button to submit the form.</li>
-</ol>
-<p>By checking the opt-in checkbox and submitting your mobile number, you expressly agree to receive recurring marketing, promotional, and informational text messages from <strong>Grandview Capital</strong> (including consultation scheduling, inquiry updates, and capital pathway information) sent via automated dialing technology.</p>
-
-<blockquote style="border-left:4px solid #c9ad75;background:rgba(201, 173, 117, 0.12);padding:22px 28px;margin:24px 0;border-radius:2px;color:#142735">
-  <strong style="display:block;margin-bottom:10px;color:#907440;font-size:15px">SMS Program Disclosure &amp; Key Terms:</strong>
-  <ul style="margin:0;padding-left:18px;line-height:1.75;font-size:13.5px">
+<blockquote style="border-left:4px solid #c9ad75;background:rgba(201, 173, 117, 0.1);padding:22px 28px;margin:24px 0;border-radius:2px;color:#142735">
+  <strong style="display:block;margin-bottom:12px;color:#907440;font-size:15px">SMS Program Summary &amp; Disclosures:</strong>
+  <ul style="margin:0;padding-left:18px;line-height:1.8;font-size:13.5px">
     <li><strong>Program Name:</strong> Grandview Capital Updates</li>
-    <li><strong>Message Frequency:</strong> Message frequency varies (typically 2–4 messages per month).</li>
+    <li><strong>Message Frequency:</strong> Message frequency varies according to your consultation activity (typically 2–4 messages per month).</li>
     <li><strong>Message &amp; Data Rates:</strong> <strong>Message and data rates may apply.</strong></li>
-    <li><strong>Opt-Out Instructions:</strong> Reply <strong>STOP</strong> to cancel or opt out.</li>
-    <li><strong>Customer Support:</strong> Reply <strong>HELP</strong> for help, call <a href="tel:+17147479562">+1 (714) 747-9562</a>, or contact customer support online.</li>
-    <li><strong>Privacy Policy Link:</strong> View our <a href="/privacy"><u>Privacy Policy</u></a> for full data protection details.</li>
-    <li><strong>Consent Non-Condition:</strong> Consent is not a condition of purchase or receiving services.</li>
+    <li><strong>Opt-Out Instructions:</strong> Text <strong>STOP</strong> at any time to cancel your enrollment.</li>
+    <li><strong>Customer Support:</strong> Text <strong>HELP</strong> for assistance, call us at <a href="tel:+17147479562">+1 (714) 747-9562</a>, or contact customer care online.</li>
+    <li><strong>Privacy Safeguards:</strong> Mobile opt-in data and consent records are not shared with third parties or affiliates for marketing purposes. View our <a href="/privacy">Privacy Policy</a>.</li>
+    <li><strong>Consent Voluntary:</strong> Opt-in consent is voluntary and not required as a condition of purchasing any service.</li>
   </ul>
 </blockquote>
 
-<h3>Sample Message Formats</h3>
-<p>Messages received from our program may include:</p>
-<ul>
-  <li><em>Opt-In Confirmation:</em> "Grandview Capital: Thank you for subscribing to Grandview Capital Updates regarding your consultation. Msg frequency varies. Msg &amp; data rates may apply. Reply STOP to cancel, HELP for help."</li>
-  <li><em>Consultation Update:</em> "Grandview Capital: Your consultation inquiry ref #GV-10293 has been received. A consultant will review your business profile shortly. Reply STOP to cancel, HELP for help."</li>
-</ul>
+<h3>Cancellation &amp; Opt-Out (STOP)</h3>
+<p>You can unsubscribe from text messages at any time by replying <strong>STOP</strong> to any message received from Grandview Capital. You will receive a single confirmation text confirming that you have been unsubscribed, after which no further text messages will be sent unless you re-enroll.</p>
 
-<h3>How to Opt Out (STOP Instructions)</h3>
-<p>You can cancel the SMS service at any time by texting <strong>STOP</strong> to any message received. Upon sending <strong>STOP</strong>, we will send one final SMS message confirming that you have been unsubscribed. After this, you will no longer receive text messages from us. If you wish to join again, simply complete the inquiry form and check the opt-in box as you did initially.</p>
+<h3>Customer Support (HELP)</h3>
+<p>If you experience issues or need assistance with text notifications, reply <strong>HELP</strong> to any text message, call our customer support line at <a href="tel:+17147479562">+1 (714) 747-9562</a>, or submit an inquiry through <a href="/#intake">our online consultation form</a>. Wireless carriers are not liable for delayed or undelivered messages.</p>
 
-<h3>Customer Care &amp; Support (HELP Instructions)</h3>
-<p>If you experience issues with the messaging program or need assistance, reply <strong>HELP</strong> to any text message, call us directly at <a href="tel:+17147479562">+1 (714) 747-9562</a>, or reach out through <a href="/#intake">our online inquiry form</a>. Wireless carriers are not liable for delayed or undelivered messages.</p>
+<h2>4. Intellectual Property</h2>
+<p>All website content, design, trademarks, graphics, and code are the exclusive property of Lead Service Group LLC / Grandview Capital and protected under applicable copyright and trademark laws.</p>
 
-<h3>Mobile Privacy Protection</h3>
-<p>We respect your mobile privacy. Mobile phone numbers, opt-in records, and SMS consent data will not be sold, rented, leased, or shared with third parties or affiliates for marketing or promotional purposes. Review our full <a href="/privacy"><u>Privacy Policy</u></a> for detailed safeguards.</p>
+<h2>5. Limitation of Liability</h2>
+<p>This website and its services are provided on an "as is" and "as available" basis. Grandview Capital disclaims all warranties to the extent permitted by law and shall not be liable for indirect, incidental, or consequential damages arising from site usage.</p>
 
-<h2>Intellectual Property</h2>
-<p>All website design, text, graphics, trademarks, and code are the property of Lead Service Group LLC / Grandview Capital and protected by applicable copyright and trademark laws.</p>
-
-<h2>Limitation of Liability</h2>
-<p>The website and materials are provided on an "as is" and "as available" basis. Grandview Capital disclaims all warranties and shall not be liable for any indirect, incidental, or consequential damages arising from the use of our site or services.</p>
-
-<h2>Changes to Terms</h2>
-<p>We reserve the right to modify these terms at any time. Updated versions will be posted on this page with an updated effective date.</p>
-
-<h2>Contact Us</h2>
+<h2>6. Contact Information</h2>
 <p>If you have questions regarding these Terms &amp; Conditions or our SMS messaging program, please contact us at:</p>
 <address style="font-style:normal;line-height:1.85;margin:16px 0 20px;color:#546770">
   <strong style="color:#142735">Lead Service Group LLC</strong> (d/b/a Grandview Capital)<br />
@@ -78,8 +57,9 @@ const content = `
   Jackson, WY 83002, US<br />
   Phone: <a href="tel:+17147479562">+1 (714) 747-9562</a>
 </address>
-<p>You may also submit inquiries online through <a href="/#intake">our consultation inquiry form</a>.</p>
+<p>You may also submit inquiries through <a href="/#intake">our online consultation form</a>.</p>
 `;
+
 
 export default function LegalPage() {
   return (

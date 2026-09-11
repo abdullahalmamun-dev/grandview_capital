@@ -298,14 +298,11 @@ export default function Intake() {
                     <label htmlFor="smsConsent">
                       By checking this box, I agree to receive recurring marketing,
                       promotional, and informational text messages from{' '}
-                      <strong>Grandview Capital</strong> (including consultation
-                      updates and financing notifications) at the mobile number
-                      provided above. Messages may be sent using automated
-                      technology. Consent is optional and not a condition of any
-                      purchase or service. Message frequency varies (typically 2–4
-                      msgs/month). <strong>Message and data rates may apply.</strong>{' '}
-                      Reply <strong>STOP</strong> to cancel or opt out. Reply{' '}
-                      <strong>HELP</strong> for help. View our{' '}
+                      <strong>Grandview Capital</strong> at the mobile number
+                      provided above. Consent is optional. Message frequency varies
+                      (typically 2–4 msgs/month). <strong>Message and data rates may apply.</strong>{' '}
+                      Reply <strong>STOP</strong> to cancel, Reply{' '}
+                      <strong>HELP</strong> for help. View{' '}
                       <a href="/terms#sms" target="_blank" rel="noreferrer">
                         Terms &amp; Conditions
                       </a>{' '}
@@ -316,6 +313,7 @@ export default function Intake() {
                       .
                     </label>
                   </div>
+
                 </>
               )}
             </div>
