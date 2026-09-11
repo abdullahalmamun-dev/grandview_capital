@@ -10,7 +10,8 @@ const content = `
 <h1>Privacy Policy</h1>
 <p class="updated">Effective date: September 11, 2026</p>
 
-<p>Grandview Capital (“Grandview,” “we,” “our,” or “us”) respects your privacy. This Privacy Policy explains how we collect, use, disclose, and protect information when you visit our website, request a consultation, or communicate with us, including through our mobile text messaging program (Grandview Capital Updates).</p>
+<p>Grandview Capital, operated by Lead Service Group LLC (“Lead Service Group,” “Grandview,” “we,” “our,” or “us”), respects your privacy. This Privacy Policy explains how we collect, use, disclose, and protect information when you visit our website, request a consultation, or communicate with us, including through our mobile text messaging program (Grandview Capital Updates).</p>
+
 
 <h2>Information We Collect</h2>
 <p>We may collect information you provide directly to us, including your name, company name, business email address, mobile telephone number, financing goals, business profile details, and the content of your communications with us. We may also collect device, browser, IP address, referral, and website usage information through essential cookies and security log data.</p>
@@ -53,7 +54,15 @@ const content = `
 <p>We may update this Privacy Policy periodically. The effective date at the top of this document indicates when changes were last implemented. Continued use of our site following an update constitutes acceptance of the revised terms.</p>
 
 <h2>Contact Us</h2>
-<p>If you have questions regarding this Privacy Policy or our mobile data protection practices, please contact Grandview Capital through <a href="/#intake">our consultation inquiry form</a>.</p>
+<p>If you have questions regarding this Privacy Policy, our mobile data protection practices, or wish to exercise your privacy rights, please contact us at:</p>
+<address style="font-style:normal;line-height:1.85;margin:16px 0 20px;color:#546770">
+  <strong style="color:#142735">Lead Service Group LLC</strong> (d/b/a Grandview Capital)<br />
+  690 S Highway 89, Suite 200. Box 9149<br />
+  Jackson, WY 83002, US<br />
+  Phone: <a href="tel:+17147479562">+1 (714) 747-9562</a>
+</address>
+<p>You may also submit inquiries online through <a href="/#intake">our consultation inquiry form</a>.</p>
+
 `;
 
 export default function LegalPage() {

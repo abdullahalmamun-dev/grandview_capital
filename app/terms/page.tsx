@@ -10,7 +10,8 @@ const content = `
 <h1>Terms &amp; Conditions</h1>
 <p class="updated">Effective date: September 11, 2026</p>
 
-<p>These Terms &amp; Conditions govern your use of the Grandview Capital website and financial consulting services. By accessing our site or submitting an inquiry, you agree to comply with these terms and our Privacy Policy.</p>
+<p>These Terms &amp; Conditions govern your use of the Grandview Capital website and financial consulting services operated by Lead Service Group LLC (“Lead Service Group,” “Grandview Capital,” “we,” “our,” or “us”). By accessing our site or submitting an inquiry, you agree to comply with these terms and our Privacy Policy.</p>
+
 
 <h2>Our Role &amp; Independent Advisory Scope</h2>
 <p>Grandview Capital provides independent financial consulting services to assist business owners in evaluating suitable capital pathways. Grandview Capital is a financial consultant, not a lender. We do not make credit decisions, issue loans, or guarantee funding approvals, interest rates, or specific terms. All financing programs are provided by independent third parties subject to separate agreements and credit evaluation.</p>
@@ -38,7 +39,7 @@ const content = `
     <li><strong>Message Frequency:</strong> Message frequency varies (typically 2–4 messages per month).</li>
     <li><strong>Message &amp; Data Rates:</strong> <strong>Message and data rates may apply.</strong></li>
     <li><strong>Opt-Out Instructions:</strong> Reply <strong>STOP</strong> to cancel or opt out.</li>
-    <li><strong>Customer Support:</strong> Reply <strong>HELP</strong> for help or customer support.</li>
+    <li><strong>Customer Support:</strong> Reply <strong>HELP</strong> for help, call <a href="tel:+17147479562">+1 (714) 747-9562</a>, or contact customer support online.</li>
     <li><strong>Privacy Policy Link:</strong> View our <a href="/privacy"><u>Privacy Policy</u></a> for full data protection details.</li>
     <li><strong>Consent Non-Condition:</strong> Consent is not a condition of purchase or receiving services.</li>
   </ul>
@@ -55,13 +56,13 @@ const content = `
 <p>You can cancel the SMS service at any time by texting <strong>STOP</strong> to any message received. Upon sending <strong>STOP</strong>, we will send one final SMS message confirming that you have been unsubscribed. After this, you will no longer receive text messages from us. If you wish to join again, simply complete the inquiry form and check the opt-in box as you did initially.</p>
 
 <h3>Customer Care &amp; Support (HELP Instructions)</h3>
-<p>If you experience issues with the messaging program or need assistance, reply <strong>HELP</strong> to any text message, or reach out directly through <a href="/#intake">our online inquiry form</a>. Wireless carriers are not liable for delayed or undelivered messages.</p>
+<p>If you experience issues with the messaging program or need assistance, reply <strong>HELP</strong> to any text message, call us directly at <a href="tel:+17147479562">+1 (714) 747-9562</a>, or reach out through <a href="/#intake">our online inquiry form</a>. Wireless carriers are not liable for delayed or undelivered messages.</p>
 
 <h3>Mobile Privacy Protection</h3>
 <p>We respect your mobile privacy. Mobile phone numbers, opt-in records, and SMS consent data will not be sold, rented, leased, or shared with third parties or affiliates for marketing or promotional purposes. Review our full <a href="/privacy"><u>Privacy Policy</u></a> for detailed safeguards.</p>
 
 <h2>Intellectual Property</h2>
-<p>All website design, text, graphics, trademarks, and code are the property of Grandview Capital and protected by applicable copyright and trademark laws.</p>
+<p>All website design, text, graphics, trademarks, and code are the property of Lead Service Group LLC / Grandview Capital and protected by applicable copyright and trademark laws.</p>
 
 <h2>Limitation of Liability</h2>
 <p>The website and materials are provided on an "as is" and "as available" basis. Grandview Capital disclaims all warranties and shall not be liable for any indirect, incidental, or consequential damages arising from the use of our site or services.</p>
@@ -70,7 +71,14 @@ const content = `
 <p>We reserve the right to modify these terms at any time. Updated versions will be posted on this page with an updated effective date.</p>
 
 <h2>Contact Us</h2>
-<p>If you have questions regarding these Terms &amp; Conditions or our SMS program, please contact Grandview Capital through <a href="/#intake">our inquiry form</a>.</p>
+<p>If you have questions regarding these Terms &amp; Conditions or our SMS messaging program, please contact us at:</p>
+<address style="font-style:normal;line-height:1.85;margin:16px 0 20px;color:#546770">
+  <strong style="color:#142735">Lead Service Group LLC</strong> (d/b/a Grandview Capital)<br />
+  690 S Highway 89, Suite 200. Box 9149<br />
+  Jackson, WY 83002, US<br />
+  Phone: <a href="tel:+17147479562">+1 (714) 747-9562</a>
+</address>
+<p>You may also submit inquiries online through <a href="/#intake">our consultation inquiry form</a>.</p>
 `;
 
 export default function LegalPage() {
