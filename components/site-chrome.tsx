@@ -53,19 +53,31 @@ export function Footer() {
             Phone: <a href="tel:+17147479562" style={{ textDecoration: 'underline', color: '#586970' }}>+1 (714) 747-9562</a>
           </div>
         </div>
+
         <div>
           <span className="eyebrow">EXPLORE</span>
           <a href="/#approach">Our approach</a>
           <a href="/#programs">Capital programs</a>
           <a href="/#intake">Request a consultation</a>
         </div>
+
         <div>
           <span className="eyebrow">INFORMATION</span>
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms &amp; Conditions</a>
           <a href="/terms#sms">SMS Terms</a>
         </div>
+
+        <div>
+          <span className="eyebrow">SMS DISCLOSURES</span>
+          <p style={{ fontSize: '11.5px', color: '#637079', lineHeight: '1.65', margin: '0' }}>
+            <strong style={{ color: '#142735' }}>Grandview Capital Updates</strong>
+            <br />
+            By submitting an inquiry, you consent to receive text messages regarding your request. Message frequency varies (2–4 msgs/month). <strong>Message and data rates may apply.</strong> Reply <strong>STOP</strong> to cancel, <strong>HELP</strong> for help or call <a href="tel:+17147479562" style={{ textDecoration: 'underline', color: '#586970' }}>+1 (714) 747-9562</a>. Mobile info is not shared with third parties for marketing. View <a href="/privacy" style={{ textDecoration: 'underline', color: '#586970' }}>Privacy Policy</a> &amp; <a href="/terms#sms" style={{ textDecoration: 'underline', color: '#586970' }}>SMS Terms</a>.
+          </p>
+        </div>
       </div>
+
       <div className="shell footer-bottom">
         <span>© {new Date().getFullYear()} Lead Service Group LLC (d/b/a Grandview Capital). All rights reserved.</span>
         <span>Financial consulting. Independent perspective.</span>
@@ -74,4 +86,5 @@ export function Footer() {
     </footer>
   );
 }
+
 
