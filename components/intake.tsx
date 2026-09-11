@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { NativeSelect } from '@/components/ui/native-select';
 import { Checkbox } from '@/components/ui/checkbox';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { programs } from '@/lib/programs';
 
 function getUUID(): string {
@@ -21,6 +21,7 @@ function getUUID(): string {
 }
 
 export default function Intake() {
+  const [step, setStep] = useState(1);
   const [pending, setPending] = useState(false);
   const [error, setError] = useState('');
   const [reference, setReference] = useState('');
@@ -50,8 +51,18 @@ export default function Intake() {
     }
   }, []);
 
+  function changeStep(next: number) {
+    setStep(next);
+    setError('');
+    setTimeout(() => heading.current?.focus(), 0);
+  }
+
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (step === 1) {
+      changeStep(2);
+      return;
+    }
     if (pending) return;
 
     setPending(true);
@@ -91,9 +102,10 @@ export default function Intake() {
     <aside className="intake" id="intake">
       <div className="intake-top">
         <span>YOUR NEXT CHAPTER STARTS HERE</span>
-        <span>{reference ? 'COMPLETE' : 'CONSULTATION'}</span>
+        <span>{reference ? 'COMPLETE' : `0${step} / 02`}</span>
       </div>
-      <div className="step-line">
+      <div className={`step-line ${step === 2 ? 'step-two' : ''}`}>
+        <i />
         <i />
       </div>
 
@@ -118,152 +130,171 @@ export default function Intake() {
         </div>
       ) : (
         <>
-          <p className="eyebrow">LET’S GET ACQUAINTED</p>
+          <p className="eyebrow">
+            {step === 1 ? 'LET’S GET ACQUAINTED' : 'LET’S STAY IN TOUCH'}
+          </p>
           <h2 ref={heading} tabIndex={-1}>
-            What’s your
-            <br />
-            next move?
+            {step === 1 ? (
+              <>
+                What’s your
+                <br />
+                next move?
+              </>
+            ) : (
+              <>
+                Put a name
+                <br />
+                to your ambition.
+              </>
+            )}
           </h2>
           <p>
-            Start with your business. We’ll help bring the capital options into
-            focus.
+            {step === 1
+              ? 'Start with your business. We’ll help bring the capital options into focus.'
+              : 'Tell us how to reach you about your business goals.'}
           </p>
 
           <form onSubmit={submit}>
             <div className="fields">
-              <label htmlFor="company">
-                Company name
-                <Input
-                  id="company"
-                  name="company"
-                  autoComplete="organization"
-                  required
-                  maxLength={160}
-                  value={values.company}
-                  onChange={(e) => update('company', e.target.value)}
-                  placeholder="Your business name"
-                />
-              </label>
+              {step === 1 ? (
+                <>
+                  <label htmlFor="company">
+                    Company name
+                    <Input
+                      id="company"
+                      name="company"
+                      autoComplete="organization"
+                      required
+                      maxLength={160}
+                      value={values.company}
+                      onChange={(e) => update('company', e.target.value)}
+                      placeholder="Your business name"
+                    />
+                  </label>
 
-              <label htmlFor="program">
-                Capital pathway
-                <NativeSelect
-                  id="program"
-                  name="program"
-                  className="program-select"
-                  value={values.program}
-                  onChange={(e) => update('program', e.target.value)}
-                >
-                  <option>Not sure yet</option>
-                  {programs.map(([name]) => (
-                    <option key={name}>{name}</option>
-                  ))}
-                </NativeSelect>
-              </label>
+                  <label htmlFor="program">
+                    Capital pathway
+                    <NativeSelect
+                      id="program"
+                      name="program"
+                      className="program-select"
+                      value={values.program}
+                      onChange={(e) => update('program', e.target.value)}
+                    >
+                      <option>Not sure yet</option>
+                      {programs.map(([name]) => (
+                        <option key={name}>{name}</option>
+                      ))}
+                    </NativeSelect>
+                  </label>
 
-              <div className="field-pair">
-                <label htmlFor="firstName">
-                  First name
-                  <Input
-                    id="firstName"
-                    name="firstName"
-                    required
-                    maxLength={80}
-                    autoComplete="given-name"
-                    value={values.firstName}
-                    onChange={(e) => update('firstName', e.target.value)}
-                    placeholder="First name"
-                  />
-                </label>
-                <label htmlFor="lastName">
-                  Last name
-                  <Input
-                    id="lastName"
-                    name="lastName"
-                    required
-                    maxLength={80}
-                    autoComplete="family-name"
-                    value={values.lastName}
-                    onChange={(e) => update('lastName', e.target.value)}
-                    placeholder="Last name"
-                  />
-                </label>
-              </div>
+                  <label htmlFor="goals">
+                    What are you looking to accomplish?{' '}
+                    <span className="optional">Optional</span>
+                    <Textarea
+                      id="goals"
+                      name="goals"
+                      rows={2}
+                      maxLength={3000}
+                      value={values.goals}
+                      onChange={(e) => update('goals', e.target.value)}
+                      placeholder="A new opportunity, equipment, room to grow…"
+                    />
+                  </label>
+                </>
+              ) : (
+                <>
+                  <div className="field-pair">
+                    <label htmlFor="firstName">
+                      First name
+                      <Input
+                        id="firstName"
+                        name="firstName"
+                        required
+                        maxLength={80}
+                        autoComplete="given-name"
+                        value={values.firstName}
+                        onChange={(e) => update('firstName', e.target.value)}
+                        placeholder="First name"
+                      />
+                    </label>
+                    <label htmlFor="lastName">
+                      Last name
+                      <Input
+                        id="lastName"
+                        name="lastName"
+                        required
+                        maxLength={80}
+                        autoComplete="family-name"
+                        value={values.lastName}
+                        onChange={(e) => update('lastName', e.target.value)}
+                        placeholder="Last name"
+                      />
+                    </label>
+                  </div>
 
-              <label htmlFor="email">
-                Business email
-                <Input
-                  id="email"
-                  name="email"
-                  required
-                  type="email"
-                  maxLength={254}
-                  autoComplete="email"
-                  value={values.email}
-                  onChange={(e) => update('email', e.target.value)}
-                  placeholder="you@company.com"
-                />
-              </label>
+                  <label htmlFor="email">
+                    Business email
+                    <Input
+                      id="email"
+                      name="email"
+                      required
+                      type="email"
+                      maxLength={254}
+                      autoComplete="email"
+                      value={values.email}
+                      onChange={(e) => update('email', e.target.value)}
+                      placeholder="you@company.com"
+                    />
+                  </label>
 
-              <label htmlFor="phone">
-                Mobile phone
-                <Input
-                  id="phone"
-                  name="phone"
-                  required
-                  type="tel"
-                  maxLength={30}
-                  autoComplete="tel"
-                  value={values.phone}
-                  onChange={(e) => update('phone', e.target.value)}
-                  placeholder="Include your country code"
-                />
-              </label>
+                  <label htmlFor="phone">
+                    Mobile phone
+                    <Input
+                      id="phone"
+                      name="phone"
+                      required
+                      type="tel"
+                      maxLength={30}
+                      autoComplete="tel"
+                      value={values.phone}
+                      onChange={(e) => update('phone', e.target.value)}
+                      placeholder="Include your country code"
+                    />
+                  </label>
 
-              <label htmlFor="goals">
-                What are you looking to accomplish?{' '}
-                <span className="optional">Optional</span>
-                <Textarea
-                  id="goals"
-                  name="goals"
-                  rows={2}
-                  maxLength={3000}
-                  value={values.goals}
-                  onChange={(e) => update('goals', e.target.value)}
-                  placeholder="A new opportunity, equipment, room to grow…"
-                />
-              </label>
-
-              <div className="consent">
-                <Checkbox
-                  id="smsConsent"
-                  name="smsConsent"
-                  checked={values.smsConsent}
-                  onCheckedChange={(checked) =>
-                    update('smsConsent', Boolean(checked))
-                  }
-                />
-                <label htmlFor="smsConsent">
-                  By checking this box, I agree to receive recurring marketing,
-                  promotional, and informational text messages from{' '}
-                  <strong>Grandview Capital</strong> (including consultation
-                  updates and financing notifications) at the mobile number
-                  provided above. Messages may be sent using automated
-                  technology. Consent is optional and not a condition of any
-                  purchase or service. Message frequency varies (typically 2–4
-                  msgs/month). <strong>Message and data rates may apply.</strong>{' '}
-                  Reply <strong>STOP</strong> to cancel or opt out. Reply{' '}
-                  <strong>HELP</strong> for help. View our{' '}
-                  <a href="/terms#sms" target="_blank" rel="noreferrer">
-                    Terms &amp; Conditions
-                  </a>{' '}
-                  and{' '}
-                  <a href="/privacy" target="_blank" rel="noreferrer">
-                    Privacy Policy
-                  </a>
-                  .
-                </label>
-              </div>
+                  <div className="consent">
+                    <Checkbox
+                      id="smsConsent"
+                      name="smsConsent"
+                      checked={values.smsConsent}
+                      onCheckedChange={(checked) =>
+                        update('smsConsent', Boolean(checked))
+                      }
+                    />
+                    <label htmlFor="smsConsent">
+                      By checking this box, I agree to receive recurring marketing,
+                      promotional, and informational text messages from{' '}
+                      <strong>Grandview Capital</strong> (including consultation
+                      updates and financing notifications) at the mobile number
+                      provided above. Messages may be sent using automated
+                      technology. Consent is optional and not a condition of any
+                      purchase or service. Message frequency varies (typically 2–4
+                      msgs/month). <strong>Message and data rates may apply.</strong>{' '}
+                      Reply <strong>STOP</strong> to cancel or opt out. Reply{' '}
+                      <strong>HELP</strong> for help. View our{' '}
+                      <a href="/terms#sms" target="_blank" rel="noreferrer">
+                        Terms &amp; Conditions
+                      </a>{' '}
+                      and{' '}
+                      <a href="/privacy" target="_blank" rel="noreferrer">
+                        Privacy Policy
+                      </a>
+                      .
+                    </label>
+                  </div>
+                </>
+              )}
             </div>
 
             <div className="honeypot" aria-hidden="true">
@@ -290,15 +321,37 @@ export default function Intake() {
               className="primary-button"
               disabled={pending}
             >
-              {pending ? 'Saving your request…' : 'Request a consultation'}
+              {pending
+                ? 'Saving your request…'
+                : step === 1
+                ? 'Continue to your details'
+                : 'Request a consultation'}
               <ArrowRight />
             </Button>
 
+            {step === 2 && (
+              <Button
+                className="back-button"
+                variant="ghost"
+                type="button"
+                onClick={() => changeStep(1)}
+                disabled={pending}
+              >
+                <ArrowLeft /> Back to your business
+              </Button>
+            )}
+
             <p className="form-note">
-              We use your details to respond to this inquiry.{' '}
-              <a href="/privacy" target="_blank" rel="noreferrer">
-                Privacy Policy
-              </a>
+              {step === 1 ? (
+                'A conversation, not a commitment.'
+              ) : (
+                <>
+                  We use your details to respond to this inquiry.{' '}
+                  <a href="/privacy" target="_blank" rel="noreferrer">
+                    Privacy Policy
+                  </a>
+                </>
+              )}
             </p>
           </form>
         </>
@@ -306,3 +359,4 @@ export default function Intake() {
     </aside>
   );
 }
+
