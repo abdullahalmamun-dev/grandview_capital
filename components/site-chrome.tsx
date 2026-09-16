@@ -60,21 +60,25 @@ export function Footer() {
         <div>
           <span className="eyebrow">HEADQUARTERS</span>
           <div className="footer-address">
-            <strong>Lead Service Group LLC</strong>
+            <strong>Grandview Capital Lending Inc.</strong>
             <br />
-            <span>d/b/a Grandview Capital</span>
+            <span>EIN: 42-2403145</span>
             <br />
-            690 S Highway 89, Suite 200
+            <span>Contact: Enrique Romero</span>
             <br />
-            Box 9149, Jackson, WY 83002, US
+            30 N Gould St, Suite 64218
             <br />
-            <a href="tel:+17147479562">+1 (714) 747-9562</a>
+            Sheridan, WY 82801, United States
+            <br />
+            <a href="tel:+13072070000">(307) 207-0000</a>
+            <br />
+            <a href="mailto:Info@grandviewcapital.com">Info@grandviewcapital.com</a>
           </div>
         </div>
       </div>
 
       <div className="shell footer-bottom">
-        <span>© {new Date().getFullYear()} Lead Service Group LLC (d/b/a Grandview Capital). All rights reserved.</span>
+        <span>© {new Date().getFullYear()} Grandview Capital Lending Inc. All rights reserved.</span>
         <span>Financial consulting. Independent perspective.</span>
         <a href="#top">Back to top ↑</a>
       </div>

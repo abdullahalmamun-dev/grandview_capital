@@ -53,7 +53,7 @@ export default function Home() {
               you for productive conversations with potential capital providers.
             </p>
             <p className="muted">
-              Grandview Capital is a financial consultant, not a lender. We do
+              Grandview Capital Lending Inc is a financial consultant, not a lender. We do
               not make credit decisions or guarantee approvals. Our role is to
               help you navigate the landscape with greater clarity.
             </p>

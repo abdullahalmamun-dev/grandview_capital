@@ -138,7 +138,7 @@ export default function Intake() {
             A good first step.
           </h2>
           <p>
-            Your consultation request has been saved for Grandview Capital to
+            Your consultation request has been saved for Grandview Capital Lending Inc to
             review.
           </p>
           <p className="reference">REFERENCE · {reference}</p>
@@ -298,7 +298,7 @@ export default function Intake() {
                     <label htmlFor="smsConsent">
                       By checking this box, I agree to receive recurring marketing,
                       promotional, and informational text messages from{' '}
-                      <strong>Grandview Capital</strong> at the mobile number
+                      <strong>Grandview Capital Lending Inc</strong> at the mobile number
                       provided above. Consent is optional. Message frequency varies
                       (typically 2–4 msgs/month). <strong>Message and data rates may apply.</strong>{' '}
                       Reply <strong>STOP</strong> to cancel, Reply{' '}

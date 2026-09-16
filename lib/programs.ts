@@ -18,7 +18,7 @@ export const programDetails: ProgramDetail[] = [
     number: '01',
     shortTitle: 'Equity',
     title: 'Equity Financing',
-    description: 'Strategic introductions and preparation for businesses considering growth capital in exchange for ownership participation.',
+    description: 'Strategic structure preparation for businesses considering growth capital in exchange for ownership participation.',
     tagline: 'BUILD FOR THE LONG TERM',
     stage: 'Growth & Scale Stage',
     typicalRange: '$2M – $25M+',
@@ -52,7 +52,7 @@ export const programDetails: ProgramDetail[] = [
     tagline: 'PLAN WITH STRUCTURE',
     stage: 'Mature / Cash-Flow Positive',
     typicalRange: '$350K – $5M',
-    highlights: ['SBA 7(a) & 504 eligibility assessment', 'DSCR & debt capacity optimization', 'Preferred bank & non-bank lender matching'],
+    highlights: ['SBA 7(a) & 504 eligibility assessment', 'DSCR & debt capacity optimization', 'Capital pathway & lending program evaluation'],
     bestFor: 'Profitable enterprises seeking structured, amortizing long-term capital.',
     iconName: 'ShieldCheck'
   },
